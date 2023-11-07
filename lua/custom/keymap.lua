@@ -14,3 +14,9 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Telescope find buff
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Telescope help tags" })
 vim.keymap.set('n', '<leader>fk', builtin.keymaps, { desc = "Telescope keymaps" })
 
+-- You merely adopted Vim. I was born in it, molded by it.
+--                              - Bane, unable to exit Vim
+vim.keymap.set({'n','v'},'<up>','<nop>')
+vim.keymap.set({'n','v'},'<down>','<nop>')
+vim.keymap.set({'n','v'},'<left>','<nop>')
+vim.keymap.set({'n','v'},'<right>','<nop>')
