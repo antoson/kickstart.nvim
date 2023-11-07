@@ -10,6 +10,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = "[S]earch [B]uffers" })
 vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = "[S]earch [K]eymaps" })
+vim.keymap.set('n', '<leader>u', '<cmd>Telescope undo<cr>', { desc = "Telescope undo" })
 
 -- You merely adopted Vim. I was born in it, molded by it.
 --                              - Bane, unable to exit Vim
