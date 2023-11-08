@@ -11,10 +11,11 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = "[S]earch [B]uffers" })
 vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = "[S]earch [K]eymaps" })
 vim.keymap.set('n', '<leader>u', '<cmd>Telescope undo<cr>', { desc = "Telescope undo" })
+vim.keymap.set('n', '<leader>fb', ':Telescope file_browser<CR>', { desc = "Telescope [F]ile [B]rowser" })
 
 -- You merely adopted Vim. I was born in it, molded by it.
 --                              - Bane, unable to exit Vim
-vim.keymap.set({'n','v'},'<up>','<nop>')
-vim.keymap.set({'n','v'},'<down>','<nop>')
-vim.keymap.set({'n','v'},'<left>','<nop>')
-vim.keymap.set({'n','v'},'<right>','<nop>')
+vim.keymap.set({ 'n', 'v' }, '<up>', '<nop>')
+vim.keymap.set({ 'n', 'v' }, '<down>', '<nop>')
+vim.keymap.set({ 'n', 'v' }, '<left>', '<nop>')
+vim.keymap.set({ 'n', 'v' }, '<right>', '<nop>')
