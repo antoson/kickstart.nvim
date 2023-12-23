@@ -21,10 +21,15 @@ vim.keymap.set({ 'n', 'v' }, '<down>', '<nop>')
 vim.keymap.set({ 'n', 'v' }, '<left>', '<nop>')
 vim.keymap.set({ 'n', 'v' }, '<right>', '<nop>')
 
--- Example mapping for doing searches from within neovim (may change) using telescope.
--- (requires telescope.nvim to be installed)
-vim.keymap.set('n', '<space>ss', '<cmd>lua require("sg.extensions.telescope").fuzzy_search_results()<CR>',
-    { desc = '[S]ourcegraph [S]earch' })
 
 -- Copy current buffer name with path
 vim.keymap.set('n', '<leader>xn', ':let @+=@%<CR>', { desc = 'Copy buffer name and path' })
+
+-- don't lose selection when indenting
+vim.keymap.set('x', '<', '<gv')
+vim.keymap.set('x', '>', '>gv')
+
+-- disable ex mode
+vim.keymap.set('n', 'Q', '<nop>')
+vim.keymap.set('n', 'q:', '<nop>')
+
