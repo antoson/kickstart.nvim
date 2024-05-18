@@ -34,3 +34,11 @@ vim.keymap.set('n', 'Q', '<nop>')
 vim.keymap.set('n', 'q:', '<nop>')
 
 vim.keymap.set('v', '<leader>y', '"+y', { desc = "Yank into system clipboard" })
+
+vim.keymap.set('n', '<leader>ff', ':Format<CR>', { desc = "[F]ile [F]ormat" })
+
+vim.keymap.set('n', '<C-Left>', '<C-w>h', { desc = "Go to window left" })
+vim.keymap.set('n', '<C-Down>', '<C-w>j', { desc = "Go to window down" })
+vim.keymap.set('n', '<C-Up>', '<C-w>k', { desc = "Go to window up" })
+vim.keymap.set('n', '<C-Right>', '<C-w>l', { desc = "Go to window right" })
+
