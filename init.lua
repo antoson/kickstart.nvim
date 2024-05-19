@@ -349,6 +349,11 @@ require('telescope').setup {
       },
     },
   },
+  pickers = {
+    find_files = {
+      find_command = { "fd", "--hidden", "--type", "f", "--strip-cwd-prefix" }
+    }
+  },
   extensions = {
     undo = {
       side_by_side = true,
